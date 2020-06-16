@@ -9,32 +9,94 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Header file for stats.c
  *
- * <Add Extended Description Here>
+ * Report Analytics on Provided Data set
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Joji John Varghese
+ * @date 15-06-2020
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Print array to the screen
  *
- * <Add Extended Description Here>
+ * Given an array of data and a length, print the array to the screen
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return none
  */
+void print_array(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Print minimum value to the screen
+ *
+ * Given an array of data and a length, print the minimum value to the screen
+ *
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return  minimum of the array
+ */
+unsigned char find_minimum(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Print maximun value to the screen
+ *
+ * Given an array of data and a length, print the maximum value to the screen
+ *
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return maximum of the array
+ */
+unsigned char find_maximum(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Print mean value to the screen
+ *
+ * Given an array of data and a length, print the mean value to the screen
+ *
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return mean of the array
+ */
+unsigned char find_mean(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Print median value to the screen
+ *
+ * Given an array of data and a length, print the median value to the screen
+ *
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return median of the array
+ */
+unsigned char find_median(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Print array statistics to the screen
+ *
+ * Given an array of data and a length, print the array to the screen
+ *
+ * @param none
+ * @return none
+ */
+void print_statistics();
+
+/**
+ * @brief Sort Array Function
+ *
+ * Given an array of data and a length, sorts the array from largest to smallest
+ *
+ * @param array pointer to the array
+ * @param length length of the array
+ * @return none
+ */
+void sort_array(unsigned char * array, unsigned int length);
 
 
 #endif /* __STATS_H__ */
